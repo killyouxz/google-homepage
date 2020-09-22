@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+  display: grid;
+  justify-items: center;
+  margin-top: 200px;
+}
+
+.search {
+  background-color: #f0eaea;
+  padding: 0.5rem;
+}
+
+#Search-bar {
+  margin: 0 2rem;
+  line-height: 1.5rem;
+  width: 400px;
+}
+
+#Search, #Lucky {
+  display: grid;
+  align-self: center;
+}
+
+#Lucky {
+  position: relative;
+  left: auto;
+  right: auto;
+}

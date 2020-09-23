@@ -22,6 +22,7 @@ main {
 
 .logo {
   width: 60vw;
+  max-width: 300px;
 }
 
 .search {
@@ -32,11 +33,11 @@ main {
 
 #Search-bar {
   margin: 0 2rem;
-  line-height: 1.5rem;
+  line-height: 2.5rem;
   width: 400px;
   max-width: 80vw;
   border: 1px solid #dfe1e5;
-  border-radius: 12px;
+  border-radius: 20px;
 }
 
 #Search-bar::placeholder {
@@ -48,18 +49,12 @@ main {
   margin-top: 1rem;
 }
 
-#Search {
-  padding: 0 0.5rem;
-  margin-right: 0.5rem;
-  width: 120px;
-  border-radius: 10px;
-  border: 1px solid #cdced1;
-}
-
-#Lucky {
-  padding: 0 0.5rem;
-  margin-left: 0.5rem;
-  width: 120px;
-  border-radius: 10px;
-  border: 1px solid #cdced1;
+#Search, #Lucky {
+  padding: 0.4rem;
+  margin: 0 0.25rem;
+  width: 140px;
+  border: 1px solid #f2f3f5;
+  font-family: arial,sans-serif;
+  font-size: 14px;
+  color: #5a5a5a;
 }

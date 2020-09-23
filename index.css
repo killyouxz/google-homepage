@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  line-height: 24px;
 }
 
 html {
@@ -8,30 +9,57 @@ html {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.container {
+main {
   display: grid;
   justify-items: center;
+}
+
+.container {
   margin-top: 200px;
+  display: grid;
+  justify-items: center;
+}
+
+.logo {
+  width: 60vw;
 }
 
 .search {
-  background-color: #f0eaea;
   padding: 0.5rem;
+  display: grid;
+  justify-content: center;
 }
 
 #Search-bar {
   margin: 0 2rem;
   line-height: 1.5rem;
   width: 400px;
+  max-width: 80vw;
+  border: 1px solid #dfe1e5;
+  border-radius: 12px;
 }
 
-#Search, #Lucky {
-  display: grid;
-  align-self: center;
+#Search-bar::placeholder {
+  text-align: center;
+}
+
+.search-buttons {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#Search {
+  padding: 0 0.5rem;
+  margin-right: 0.5rem;
+  width: 120px;
+  border-radius: 10px;
+  border: 1px solid #cdced1;
 }
 
 #Lucky {
-  position: relative;
-  left: auto;
-  right: auto;
+  padding: 0 0.5rem;
+  margin-left: 0.5rem;
+  width: 120px;
+  border-radius: 10px;
+  border: 1px solid #cdced1;
 }

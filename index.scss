@@ -1,15 +1,20 @@
+$svg-fill:#5a5a5a;
+:root{
+--svg-fill: $svg-fill;
+}
 *{
     margin: 0;
     padding: 0;
     line-height: 24px;
     font-size: 16px;
+    color: #5F6368;
 }
 html{
     font-size: 16px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 header{
-    background-color: red;
+    background-color: rgba(255, 255, 255, 0);
 }
 .navbar{
     width: 100vw;
@@ -26,15 +31,35 @@ ul{
 }
 .list1{
     justify-self: left;
+    margin-left: 1rem;
 }
 .list2{
     justify-self: right;
+    margin-right: 1rem;
 }
-.item1,.item3,.item4,.item5{
-    padding-right: 0.5rem;
+.item1,.item3,.item4,.item5,.item6{
+    padding-right: 0.75rem;
 }
 .item2,.item4,.item5,.item6{
-    padding-left: 0.5rem;
+    padding-left: 0.75rem;
+}
+.list2 .item5{
+    width: 20px;
+    fill: var(--svg-fill);
+    position: relative;
+    top: 3px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.list2 .item6{
+    background-color: #2889f7;
+    margin-left: 0.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    border-radius: 0.2rem;
+    color: white;
 }
 main{
     display: grid;
@@ -54,24 +79,26 @@ main{
     display: grid;
     justify-content: center;
 }
-.search-box
-    svg{
-        fill: #5a5a5a;
-        width: 20px;
-        position: absolute;
-        margin-top: 13px;
-        margin-left: 40px;
+.search-box svg{
+    fill: var(--svg-fill);
+    width: 20px;
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 10px;
     }
 #Search-bar{
-    margin: 0 2rem;
+    margin: 0 2.5rem;
     line-height: 2.5rem;
     width: 400px;
-    max-width: 80vw;;
-    border: 1px solid #dfe1e5;
-    border-radius: 20px;
+    max-width: 80vw;
+    border: 0;
 }
 #Search-bar::placeholder{
     text-align: center;
+}
+.Search-div{
+    border: 1px solid #dfe1e5;
+    border-radius: 20px;
 }
 .buttons{
     text-align: center;
@@ -79,10 +106,28 @@ main{
     }
 #Search-button, #Lucky-button{
     padding: 0.4rem;
-    margin: 0 0.25rem;
+    margin: 0 0.75rem;
     width: 140px;
     border: 1px solid #f2f3f5;
     font-family: arial,sans-serif;
     font-size: 14px;
-    color: #5a5a5a;
+    background-color: #f8f8f8;
+}
+.footer{
+    width: 100vw;
+    height: 50px;
+    display: grid;
+    grid-auto-flow: column;
+}
+.footer-list1{
+    justify-self: left;
+    margin-left: 1rem;
+}
+.footer-list2{
+    justify-self: right;
+    margin-right: 1rem;
+}
+.footer li{
+    margin: 0 0.5rem;
+    padding: 0 0.5rem
 }
